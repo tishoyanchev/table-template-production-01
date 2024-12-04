@@ -1,0 +1,32 @@
+@use "~@infineon/design-system-tokens/dist/tokens";
+
+* { 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans 3";
+}
+
+.main__wrapper { 
+  padding: 0 tokens.$ifxSpace1500;
+  display: flex;
+  flex-direction: column;
+  gap: tokens.$ifxSpace300;
+
+  & .table__desc { 
+    padding: tokens.$ifxSpace400 0;
+    & h2 { 
+      color: tokens.$ifxColorBaseBlack;
+      font-size: tokens.$ifxSize450;
+      font-style: normal;
+      font-weight: tokens.$ifxFontWeightSemibold;
+      line-height: tokens.$ifxSize600;
+      letter-spacing: -0.36px;
+    }
+  }
+
+  & .pagination__wrapper { 
+    display: flex;
+    justify-content: flex-end;
+  }
+}
